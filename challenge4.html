@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prompt</title>
+</head>
+<body>
+    <script type : "text/javascript">
+    var str =prompt("Enter the string :" )
+    if(!(isNaN(str)))
+    {
+        var num,r=0,rem,p,ab;
+        num = parseInt(str);
+        ab=num;
+        while(num!=0)
+        {
+            rem = num % 10;
+            num = parseInt(num/10);
+            r=r*10+rem;
+            p=ab*r;
+        }
+        alert("Reverse of "+str+" is "+ r +" and the product is "+ p)
+    }
+    else
+    {
+            let nstr = str.toUpperCase();
+            const vowels = ["A", "E", "I", "O", "U"]
+            let count = 0;
+                    for (let letter of str.toUpperCase()) 
+                    {
+                        if (vowels.includes(letter))
+                        {
+                            count++;
+                        }
+                        
+                    }
+           
+        alert("The string is "+nstr+" has "+count+" number of vowels")
+    }
+    </script>
+</body>
+</html>
